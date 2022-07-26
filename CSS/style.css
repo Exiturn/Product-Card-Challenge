@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,700,1&display=swap");
+/* line 9, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* line 13, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.attribution a {
+  color: #3e52a3;
+}
+
+/* line 18, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: #f2ebe3;
+}
+
+/* line 24, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 32, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 50rem;
+  max-height: 50rem;
+  align-self: center;
+  justify-self: center;
+}
+
+/* line 40, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .main-content {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  grid-column: 2;
+  max-width: 100%;
+  width: 1fr;
+  max-height: 100%;
+  height: 1fr;
+  border-radius: 0 15px 15px 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 54, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .header-container {
+  padding-top: 5%;
+}
+
+/* line 57, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .header-container .header {
+  letter-spacing: 7px;
+  opacity: 50%;
+}
+
+/* line 64, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .card__img {
+  grid-column: 1;
+  max-width: 1fr;
+  max-height: 1fr;
+}
+
+/* line 69, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .card__img .main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+
+/* line 76, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .perfume-name-container {
+  display: flex;
+}
+
+/* line 79, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .perfume-name-container .perfume-name {
+  font-family: 'Fraunces', serif;
+  font-size: 250%;
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0;
+}
+
+/* line 88, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .description-container {
+  padding-top: 10%;
+  opacity: 55%;
+  line-height: 150%;
+  font-size: 14px;
+}
+
+/* line 95, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .prices-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 100, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .prices-container .prices__discounted-price {
+  font-family: 'Fraunces', serif;
+  align-self: start;
+  font-size: 3vw;
+  text-align: center;
+  margin: auto 5% auto 0;
+  color: #3c8067;
+}
+
+/* line 110, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .prices-container .prices__main-price {
+  text-align: center;
+  text-decoration: line-through;
+  margin: auto auto auto 0;
+  opacity: 50%;
+  letter-spacing: 1%;
+}
+
+/* line 119, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .card__btn-container {
+  width: 100%;
+  height: 100%;
+  max-height: 90px;
+  display: flex;
+}
+
+/* line 125, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .card__btn-container .btn_add-cart {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70%;
+  max-height: 70px;
+  min-height: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 125%;
+  background: #3c8067;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  transition: background ease .5s;
+}
+
+/* line 141, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+.card .card__btn-container .btn_add-cart:hover {
+  background: #1c232b;
+  cursor: pointer;
+}
+
+@media (max-width: 415px) {
+  /* line 155, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .main-container {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+  }
+  /* line 161, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 85vh;
+  }
+  /* line 167, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .card__img {
+    height: 40%;
+  }
+  /* line 170, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .card__img .main-img {
+    max-width: 85vw;
+    max-height: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  /* line 177, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .main-content {
+    border-radius: 0 0 15px 15px;
+    height: 100%;
+    gap: 1px;
+  }
+  /* line 183, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .header-container {
+    padding: 0;
+    font-size: 3vw;
+  }
+  /* line 188, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .description-container {
+    padding-top: 5%;
+  }
+  /* line 193, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .prices-container .prices__discounted-price > p {
+    margin: auto;
+    font-size: 10vw;
+  }
+  /* line 199, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .card__btn-container {
+    align-items: center;
+  }
+  /* line 202, ../../../Desktop/Frontend Mentor/Challenge 1 - Product Card/Product-Preview-Card-Challenge/product-preview-card-component-main/SCSS/style.scss */
+  .card .card__btn-container .btn_add-cart {
+    font-size: 4vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
